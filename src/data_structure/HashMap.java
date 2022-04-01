@@ -27,7 +27,7 @@ public class HashMap<Key, Value> {
     /**
      * 节点数据结构，存储 Key 和 Value
      */
-    private static class Node<K, V> {
+    static class Node<K, V> {
         int hash;
         K key;
         V value;
@@ -43,7 +43,7 @@ public class HashMap<Key, Value> {
     /**
      * 红黑树数据结构
      */
-    private static class TreeNode<K, V> extends Node<K, V> {
+    static class TreeNode<K, V> extends Node<K, V> {
         TreeNode<K, V> parent;
         TreeNode<K, V> left;
         TreeNode<K, V> right;
